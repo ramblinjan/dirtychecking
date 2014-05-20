@@ -1,6 +1,6 @@
 [Initial can.compute.watch demo](./index.html)
 
-Seems like most implementations are not built with supporting legacy browsers in mind.
+Seems like most implementations are not built with supporting legacy browsers in mind. [Angular's current implementation of dirty checking](https://docs.angularjs.org/guide/scope) is the closest to what we're trying to get, but Watchtower.js and Polymer's Observe-JS not so much.
 
 # Object.observe implementations
 
