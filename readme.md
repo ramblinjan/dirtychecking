@@ -1,4 +1,4 @@
-[Initial can.compute.watch demo](./index.html)
+[Initial can.compute.watch demo](http://jandjorgensen.github.io/dirtychecking/)
 
 Seems like most implementations are not built with supporting legacy browsers in mind. [Angular's current implementation of dirty checking](https://docs.angularjs.org/guide/scope) is the closest to what we're trying to get, but Watchtower.js and Polymer's Observe-JS not so much.
 
@@ -6,7 +6,7 @@ Seems like most implementations are not built with supporting legacy browsers in
 
 ## Object.observe "polyfill"
 
-Demoed in [index page](./index.html) on recent browsers. IE8 support had its issues. Not specified, but I suspect it also requires ES5. Failures come from things like `Object.isFrozen`.
+Demoed for recent browsers. IE8 support had its issues. Not specified, but I suspect it also requires ES5. Failures come from things like `Object.isFrozen`.
 
 ## watchtower.js
 
