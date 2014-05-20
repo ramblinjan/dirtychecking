@@ -1,0 +1,18 @@
+[submodule "canjs"]
+	path = canjs
+	url = https://github.com/bitovi/canjs.git
+[submodule "steal"]
+	path = steal
+	url = https://github.com/bitovi/steal.git
+[submodule "Object.observe"]
+	path = Object.observe
+	url = https://github.com/jdarling/Object.observe.git
+[submodule "es5-shim"]
+	path = es5-shim
+	url = https://github.com/es-shims/es5-shim.git
+[submodule "polyfill"]
+	path = polyfill
+	url = https://github.com/inexorabletash/polyfill.git
+[submodule "watchtower.js"]
+	path = watchtower.js
+	url = https://github.com/angular/watchtower.js.git

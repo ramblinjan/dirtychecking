@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Dirty Checking Demo</title>
+    <script src="Object.observe/Object.observe.poly.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//canjs.com/release/2.1.0/can.jquery.js"></script>
+    <script type="text/javascript">
+    can.compute.watch = function(object, property){
+        var watchedCompute = can.compute(object[property]);
+        Object.observe(object, function(changes){
+          can.each(changes, function(change){
+            if(change.name === property){
+              return watchedCompute(change.object[property]);
+            }
+          });
+        })
+
+        return watchedCompute;
+    };
+
+    var foo = {bar: "Hello"};
+    var barCompute = can.compute.watch(foo, "bar");
+    barCompute.bind('change', function(ev, newVal, oldVal){
+      alert("Property change: " + newVal);
+    });
+    foo.bar = "hi";
+    </script>
+    </head>
+    <body>
+    </body>
+</html>
