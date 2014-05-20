@@ -16,3 +16,6 @@
 [submodule "watchtower.js"]
 	path = watchtower.js
 	url = https://github.com/angular/watchtower.js.git
+[submodule "observejs"]
+	path = observejs
+	url = https://github.com/Polymer/observe-js.git
